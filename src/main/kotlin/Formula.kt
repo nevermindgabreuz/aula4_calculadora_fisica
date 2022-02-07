@@ -6,7 +6,7 @@ class Formula {
 
     fun forcaCentripeda(massa:Double,velocidade:Double,raio:Double):Double = massa * (sqrt(velocidade) /raio)
 
-    fun impuslo(intensidade:Double,velocidadeInicial:Double, velocidadeFinal:Double,tempoInicial:Double,tempoFinal:Double ):Double
+    fun impuslso(intensidade:Double,velocidadeInicial:Double, velocidadeFinal:Double,tempoInicial:Double,tempoFinal:Double ):Double
     = intensidade * (tempoFinal - tempoInicial)
 
     fun calcularForcaElastica(deformacao:Double, constanteElastica:Double):Double = deformacao * constanteElastica
@@ -14,7 +14,8 @@ class Formula {
     fun calcularVelocidadeMedia(posicaoFinal:Double,posicaoInicial:Double,tempoInicial:Double,tempoFinal:Double):Double
     = (posicaoFinal - posicaoInicial) / (tempoFinal - tempoInicial)
 
-    //fun calcularMovimentoUniforme()
+    fun calcularMovimentoUniforme(posicaoInicial:Double,velocidade:Double,tempoInicial: Double, tempoFinal: Double, tempoInicial: Double):
+    Double = posicaoInicial + velocidade * (tempoFinal - tempoInicial)
 
     //fun calcularMovimentoUniformementeVariavel()
 }
