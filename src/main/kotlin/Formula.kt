@@ -8,8 +8,6 @@ class Formula {
 
     fun impuslso(
         intensidade: Double,
-        velocidadeInicial: Double,
-        velocidadeFinal: Double,
         tempoInicial: Double,
         tempoFinal: Double
     ): Double = intensidade * (tempoFinal - tempoInicial)
@@ -28,7 +26,6 @@ class Formula {
 
     fun calcularMovimentoUniformementeVariavel(
         velocidadeInicial: Double,
-        velocidadeFinal: Double,
         posicaoInicial: Double,
         aceleracao: Double,
         tempoInicial: Double,
